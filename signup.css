@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(to right, rgb(11, 78, 133), rgb(194, 76, 40));;
+    border: 3px solid;
+    border-color: royalblue;
+}
+.sign-up{
+    width: 350px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.sign-up h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sign-up input{
+    width: 70%;
+    border-radius: 15px;
+    padding: 6px 15px;
+    margin: 8px 0;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    display: inline-block;
+    border:3px solid royalblue;
+    box-sizing: border-box;
+}
+.sign-up input[type="submit"]{
+    border: 0px;
+    background: rgb(70, 179, 70);
+    cursor: pointer;
+    color: rgb(245, 229, 229);
+    width: 30%;
+    font-size: 18px;
+    margin-left: 110px;
+}
+.sign-up input[type="submit"]:hover{
+    background: rgb(1, 110, 1);
+    transition: .5s;
+}

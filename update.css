@@ -1,0 +1,64 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(to bottom right, rgb(11, 78, 133), rgb(194, 76, 40));
+}
+.stu{
+    text-align: right;
+    line-height: 53px;
+    margin-left: 100px;
+    color: rgb(7, 10, 7);
+}
+.stu label{
+    padding-bottom: 50px;
+    color: rgb(2, 0, 8);
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+}
+.inp{
+    width: 100%;
+    padding: 10px;
+    margin-left: -100px;
+}
+.inp input{
+    width: 22%;
+    padding: 7px;
+    margin-bottom: 20px;
+    float: none;
+    margin-left: 100px;
+    border-radius: 3mm;
+    text-align: center;
+    color: rgb(14, 14, 15);
+    border: 2px solid royalblue;
+    
+}
+.inp select{
+    width: 24%;
+    margin-bottom: 20px;
+    padding: 6px;
+    margin-left: 100px;
+    border-radius: 3mm;
+    border: 2px solid royalblue;
+    color: rgb(14, 14, 15);
+    text-align: center;
+}
+
+.displaygrid{
+    display: grid;
+    grid-template-columns: 1.2fr 1.5fr;
+    
+}
+.inp input[type="submit"]{
+    /* margin-left: 100px; */
+    background: rgb(101, 163, 101);
+    cursor: pointer;
+    width: 16%;
+    /* top: 200%; */
+}
+.inp input[type="button"]:hover{
+    background: rgb(50, 124, 50);
+    transition: 0.6ms;
+}

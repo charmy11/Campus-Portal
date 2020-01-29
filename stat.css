@@ -1,0 +1,65 @@
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 180px;
+}
+.displaygrid{
+    display: grid;
+    grid-template-columns: 1.2fr 1.5fr;
+}
+.stu{
+    text-align: right;
+    margin-left: 25%;
+    line-height: 35px;
+    margin-top: 5%;
+    font-size: 20px;
+}
+.inp{
+    margin-left: 2%;
+    line-height: 35px;
+    margin-top: 4%;
+    font-size: 20px;
+}
+
+.label1{
+    margin-left: 20%;
+}
+
+a :first-child{
+    margin-left: 20%;
+    position: relative;
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+.submit{
+    border-radius: 2mm;
+    margin-left: 20px;
+    background: transparent;
+    width: 5%;
+    padding: 3px;
+    background-color: rgb(57, 236, 96);
+    cursor: pointer;
+}
+.submit input[type="submit"]:hover{
+    background: rgb(14, 83, 29);
+    transition: 0.6s;
+}
+
+.year{
+    width: 5%;
+    border-radius: 2mm;
+}
+
+.submit1{
+    border-radius: 2mm;
+    margin-left: 10%;
+    background: transparent;
+    width: 5%;
+    padding: 3px;
+    background-color: rgb(57, 236, 96);
+    cursor: pointer;
+}
+.submit1 input[type="submit"]:hover{
+    background: rgb(14, 83, 29);
+    transition: 0.6s;
+}

@@ -1,0 +1,45 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+.det{
+    width: 50%;
+    margin-left: 35%;
+    margin-top: 3%;
+    line-height: 25px;
+}
+.table{
+    margin-top: 1%;
+    border-collapse: collapse;
+}
+
+.table th{
+    padding: 15px;
+    border:1px solid #ddd;
+    color: rgb(61, 44, 44);
+    background-color: rgb(55, 223, 83);
+}
+
+.table td{
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 15px;
+}
+.sub{
+    margin-left: 50%;
+    margin-top: 1%;
+}
+.sub input[type="submit"]{
+    /* margin-left: 100px; */
+    background: rgb(101, 163, 101);
+    cursor: pointer;
+    width: 16%;
+    padding: 8px;
+    border-radius: 3mm;
+    /* top: 200%; */
+}
+.sub input[type="submit"]:hover{
+    background: rgb(50, 124, 50);
+    transition: 0.6ms;
+}
