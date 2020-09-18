@@ -5,14 +5,14 @@
     $name=$_SESSION['name'];
 	if(isset($_POST["add"]))
 	{
-		$c_name=$_POST["company"];
-		$type=$_POST["ptype"];
-		$date=$_POST["date"];
-		$loc=$_POST["location"];
-        $ctc=$_POST["ctc"];
-        $online=$_POST["etype"];
-		$query="insert into placement(st_usn,name,company_name,type,online,date,location,ctc) values ('$usn','$name','$c_name','$type','$online','$date','$loc','$ctc')";
-		$res=mysqli_query($sql,$query) or die("Failed ".mysqli_error($sql));
+		$c_name = $_POST["company"];
+		$type = $_POST["ptype"];
+		$date = $_POST["date"];
+		$loc = $_POST["location"];
+        $ctc = $_POST["ctc"];
+        $online = $_POST["etype"];
+		$query = "insert into placement(st_usn,name,company_name,type,online,date,location,ctc) values ('$usn','$name','$c_name','$type','$online','$date','$loc','$ctc')";
+		$res = mysqli_query($sql,$query) or die("Failed ".mysqli_error($sql));
 		if($res){
             echo "<script type='text/javascript'>alert('Details entered successfully');</script>";
             header('Location:display.php');
