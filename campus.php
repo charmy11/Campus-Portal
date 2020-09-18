@@ -27,7 +27,7 @@
         $usn = $_POST["usn"];
         $c_name = $_POST["company"];
 		$query = "select * from placement where st_usn='$usn' and company_name='$c_name'";
-		$res=mysqli_query($sql,$query) or die("Failed ".mysqli_error($sql));
+		$res = mysqli_query($sql,$query) or die("Failed ".mysqli_error($sql));
 		$result = mysqli_fetch_assoc($res);
 		if(count($result)){
 		$_SESSION['usn'] = $usn;
@@ -38,6 +38,13 @@
 		$_SESSION['loc']=$result["location"];
         $_SESSION['ptype']=$result["type"];
         $_SESSION['etype']=$result["online"];
+		$_SESSION['name'] = $result["name"];
+		$_SESSION['cdate'] = $result["date"];
+		$_SESSION['cname'] = $result["company_name"];
+		$_SESSION['ctc'] = $result["ctc"];
+		$_SESSION['loc'] = $result["location"];
+        $_SESSION['ptype'] = $result["type"];
+        $_SESSION['etype'] = $result["online"];
 		header("Location:update_campus.php");
 		}
 		else{
