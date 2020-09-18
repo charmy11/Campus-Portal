@@ -1,8 +1,8 @@
 <?php
     session_start();
     include 'conn.php';
-    $usn=$_SESSION['usn'];
-    $name=$_SESSION['name'];
+    $usn = $_SESSION['usn'];
+    $name = $_SESSION['name'];
 	if(isset($_POST["add"]))
 	{
 		$c_name = $_POST["company"];
