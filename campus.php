@@ -26,7 +26,7 @@
 		session_start();
         $usn = $_POST["usn"];
         $c_name = $_POST["company"];
-		$query="select * from placement where st_usn='$usn' and company_name='$c_name'";
+		$query = "select * from placement where st_usn='$usn' and company_name='$c_name'";
 		$res=mysqli_query($sql,$query) or die("Failed ".mysqli_error($sql));
 		$result=mysqli_fetch_assoc($res);
 		if(count($result)){
