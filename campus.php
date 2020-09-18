@@ -31,13 +31,13 @@
 		$result = mysqli_fetch_assoc($res);
 		if(count($result)){
 		$_SESSION['usn'] = $usn;
-		$_SESSION['name']=$result["name"];
-		$_SESSION['cdate']=$result["date"];
-		$_SESSION['cname']=$result["company_name"];
-		$_SESSION['ctc']=$result["ctc"];
-		$_SESSION['loc']=$result["location"];
-        $_SESSION['ptype']=$result["type"];
-        $_SESSION['etype']=$result["online"];
+		$_SESSION['name'] = $result["name"];
+		$_SESSION['cdate'] = $result["date"];
+		$_SESSION['cname'] = $result["company_name"];
+		$_SESSION['ctc'] = $result["ctc"];
+		$_SESSION['loc'] = $result["location"];
+        $_SESSION['ptype'] = $result["type"];
+        $_SESSION['etype'] = $result["online"];
 		$_SESSION['name'] = $result["name"];
 		$_SESSION['cdate'] = $result["date"];
 		$_SESSION['cname'] = $result["company_name"];
