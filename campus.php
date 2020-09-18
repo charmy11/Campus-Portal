@@ -30,7 +30,7 @@
 		$res=mysqli_query($sql,$query) or die("Failed ".mysqli_error($sql));
 		$result = mysqli_fetch_assoc($res);
 		if(count($result)){
-		$_SESSION['usn']=$usn;
+		$_SESSION['usn'] = $usn;
 		$_SESSION['name']=$result["name"];
 		$_SESSION['cdate']=$result["date"];
 		$_SESSION['cname']=$result["company_name"];
