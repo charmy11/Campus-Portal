@@ -8,13 +8,13 @@ function display_year(){
     // if(isset($_POST['section']))
     // {
         // $section = $_POST['section'];
-        $str2="SELECT usn,name,section,year_of_passing from student where year_of_passing=$year and section=$section and usn IN (SELECT DISTINCT(st_usn) FROM placement)  ORDER BY usn";
-        $res2=mysqli_query($sql,$str2) or die("Failed : ".mysqli_error($sql));
-        while($arr=mysqli_fetch_assoc($res2)){
-            $usn=$arr["usn"];
-            $str1="select count(*) as numbers from placement where st_usn='$usn'";
-            $res1=mysqli_query($sql,$str1);
-            $num=mysqli_fetch_assoc($res1);
+        $str2 = "SELECT usn,name,section,year_of_passing from student where year_of_passing=$year and section=$section and usn IN (SELECT DISTINCT(st_usn) FROM placement)  ORDER BY usn";
+        $res2 = mysqli_query($sql,$str2) or die("Failed : ".mysqli_error($sql));
+        while($arr = mysqli_fetch_assoc($res2)){
+            $usn = $arr["usn"];
+            $str1 = "select count(*) as numbers from placement where st_usn='$usn'";
+            $res1 = mysqli_query($sql,$str1);
+            $num = mysqli_fetch_assoc($res1);
         ?>
         <tr>
         <td><?php echo $arr['usn']; ?></td>
